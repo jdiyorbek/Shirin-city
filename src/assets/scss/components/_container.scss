@@ -1,0 +1,62 @@
+@use "../abstract/variables" as var;
+
+.container {
+  width: 1100px;
+  margin: {
+    left: calc(50% - 550px);
+    right: calc(50% - 550px)
+  }
+}
+
+@media (max-width: 1099px) {
+  .container {
+    width: 768px;
+    margin: {
+      left: calc(50% - 384px);
+      right: calc(50% - 384px)
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 600px;
+    margin: {
+      left: calc(50% - 300px);
+      right: calc(50% - 300px)
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 500px;
+    margin: {
+      left: calc(50% - 250px);
+      right: calc(50% - 250px)
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 100%;
+    margin: {
+      left: 0;
+      right: 0;
+    }
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+  }
+}
+
+
+.container-fluid {
+  width: 100%;
+}
+
+.bg-white {
+  background-color: var.$white
+}

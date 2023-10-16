@@ -1,0 +1,264 @@
+@use "../abstract/mixins" as mixin;
+@use "../abstract/variables" as var;
+
+.header__contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 10px 0;
+
+  .header__logo {
+    display: block;
+    height: 50px;
+
+    img { 
+      height: 100%;
+    }
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 70px;
+
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+
+      > span {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: var.$primary;
+        color: var.$white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: {
+          size: 2rem;
+        }
+        margin: {
+          right: 10px;
+        }
+      }
+    }
+
+    .contact-info-item:first-child {
+      margin: {
+        right: 30px;
+      };
+    }
+  }
+}
+
+.open-nav-btn {
+  height: 50px;
+  width: 50px;
+  background-color: var.$secondary;
+  border: none;
+  color: var.$white;
+  cursor: pointer;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  font: {
+    size: 2rem;
+  };
+  display: none;
+  padding: 9px;
+}
+
+.nav-container {
+  height: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.header__navigation {
+  background-color: var.$primary;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  .close-nav-btn {
+    width: 50px;
+    height: 50px;
+    background-color: var.$secondary;
+    border: none;
+    color: var.$white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font: {
+      size: 2rem;
+    };
+    display: none;
+    padding: 9px;
+  }
+
+  ul {
+    @include mixin.list-reset;
+    li {
+      height: 100%;
+      display: inline-block;
+      margin: {
+        left: 30px;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+        color: var.$secondary;
+        font: {
+          size: 1.3rem;
+          weight: 600;
+        }
+
+        &:hover {
+          color: var.$secondary;
+        }
+      }
+    }
+  }
+}
+
+.header__carusel {
+  $header-carusel-height: calc(600px - 115px);
+  height: $header-carusel-height;
+  overflow: hidden; 
+  background: {
+    image: url("../../images/header-bg.jpg");
+    size: cover;
+  }
+
+  .header__carusel-item {
+    width: 100%;
+    height: $header-carusel-height;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      width: 600px;
+      color: var.$white;
+      font: {
+        size: 3rem;
+        weight: 700;
+      }
+      margin-bottom: 20px;
+    }
+    a {
+      padding: 15px 20px;
+      background-color: var.$primary;
+      color: var.$secondary;
+      font: {
+        size: 1.1rem;
+        weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 1099px) {
+  .header__contact-info {
+    flex-direction: column;
+    .header__logo {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }  
+}
+
+@media (max-width: 800px) {
+  $width-nav: 300px;
+  .nav-container {
+    position: static;
+    height: 0;
+  }
+  .open-nav-btn {
+    display: block;
+  }
+  .header__navigation {
+    z-index: 99;
+    height: 100vh;
+    width: $width-nav;
+    background-color: var.$primary;
+    position: fixed;
+    top: 0;
+    right: -($width-nav);
+
+    &.active {
+      right: 0;
+    }
+
+    .close-nav-btn {
+      display: block;
+    }
+    ul {
+      @include mixin.list-reset;
+      margin-top: 10px;
+      li {
+        display: block;
+        margin: 0;
+        a {
+          padding: 15px 0;
+            
+          &:hover {
+            color: var.$secondary;
+          }
+        }
+      }
+    }
+  }
+  
+  .header__carusel {  
+    height: calc(550px - 115px);
+    .header__carusel-item {
+      align-items: center;
+      justify-content: center;
+      h1 {
+        width: 70%;
+        text-align: center;
+        font: {
+          size: 2.5rem;
+          weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header__contact-info {
+    .contact-info {
+      display: none;
+    }
+  }
+
+  .header__carusel {  
+    height: calc(550px - 115px);
+    .header__carusel-item {
+      align-items: center;
+      justify-content: center;
+      h1 {
+        width: 80%;
+        text-align: center;
+        font: {
+          size: 2.2rem;
+          weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header__contact-info {
+    width: 100%;
+    display: block;
+  }
+}
