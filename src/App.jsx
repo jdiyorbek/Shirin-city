@@ -5,7 +5,7 @@ import News from "./pages/News"
 import Contact from "./pages/Contact"
 
 // import Header from "./layouts/Header"
-import Footer from "./layouts/Footer"
+// import Footer from "./layouts/Footer"
 
 function App() {
   return (

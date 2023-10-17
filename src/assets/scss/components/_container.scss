@@ -2,10 +2,7 @@
 
 .container {
   width: 1100px;
-  margin: {
-    left: calc(50% - 550px);
-    right: calc(50% - 550px)
-  }
+  margin: 0 calc(50% - 550px);
 }
 
 @media (max-width: 1099px) {

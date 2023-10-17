@@ -74,6 +74,7 @@
   height: 20px;
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 
 .header__navigation {
@@ -183,7 +184,6 @@
     display: block;
   }
   .header__navigation {
-    z-index: 99;
     height: 100vh;
     width: $width-nav;
     background-color: var.$primary;

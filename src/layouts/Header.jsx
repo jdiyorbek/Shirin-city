@@ -1,19 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
 function Header() {
-  // const [nav, setNav] = useState(false)
-
-  // const showNav = () => {
-  //   setNav(true)
-  // }
-
-  // const hideNav = () => {
-  //   setNav(false)
-  // }
-
   return (
     <>
         <header className="header">
@@ -40,24 +30,24 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className="container nav-container">
-            <Navbar />
-          </div>
-          <div className="header__carusel">
-            <div className="header__carusel-wrapper">
-              <div className="container">
-                <div className="header__carusel-item">
-                  <h1>
-                    We Are Professional Quality Services
-                  </h1>
-                  <Link to="/contact">
-                    Our Services
-                  </Link>
-                </div>
+        </header>
+        <div className="container nav-container">
+          <Navbar />
+        </div>
+        <div className="header__carusel">
+          <div className="header__carusel-wrapper">
+            <div className="container">
+              <div className="header__carusel-item">
+                <h1>
+                  We Are Professional Quality Services
+                </h1>
+                <Link to="/contact">
+                  Our Services
+                </Link>
               </div>
             </div>
           </div>
-        </header>
+        </div>
     </>
   )
 }
