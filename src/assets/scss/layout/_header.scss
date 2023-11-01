@@ -9,7 +9,7 @@
 
   .header__logo {
     display: block;
-    height: 50px;
+    height: 60px;
 
     img { 
       height: 100%;
@@ -81,6 +81,7 @@
   background-color: var.$primary;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 99;
 
   .close-nav-btn {
     width: 50px;
@@ -122,43 +123,6 @@
         &:hover {
           color: var.$secondary;
         }
-      }
-    }
-  }
-}
-
-.header__carusel {
-  $header-carusel-height: calc(600px - 115px);
-  height: $header-carusel-height;
-  overflow: hidden; 
-  background: {
-    image: url("../../images/header-bg.jpg");
-    size: cover;
-  }
-
-  .header__carusel-item {
-    width: 100%;
-    height: $header-carusel-height;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    h1 {
-      width: 600px;
-      color: var.$white;
-      font: {
-        size: 3rem;
-        weight: 700;
-      }
-      margin-bottom: 20px;
-    }
-    a {
-      padding: 15px 20px;
-      background-color: var.$primary;
-      color: var.$secondary;
-      font: {
-        size: 1.1rem;
-        weight: 500;
       }
     }
   }
@@ -214,44 +178,12 @@
       }
     }
   }
-  
-  .header__carusel {  
-    height: calc(550px - 115px);
-    .header__carusel-item {
-      align-items: center;
-      justify-content: center;
-      h1 {
-        width: 70%;
-        text-align: center;
-        font: {
-          size: 2.5rem;
-          weight: 700;
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 650px) {
   .header__contact-info {
     .contact-info {
       display: none;
-    }
-  }
-
-  .header__carusel {  
-    height: calc(550px - 115px);
-    .header__carusel-item {
-      align-items: center;
-      justify-content: center;
-      h1 {
-        width: 80%;
-        text-align: center;
-        font: {
-          size: 2.2rem;
-          weight: 700;
-        }
-      }
     }
   }
 }

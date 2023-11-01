@@ -1,9 +1,19 @@
 import React from "react"
 
+import Header from "../layouts/Header"
+import Footer from "../layouts/Footer"
+
+import HeaderBanner from "../components/HeaderBanner"
+import MapAndContact from "../components/MapAndContact"
+
+
 function Contact() {
   return (
     <>
-      <h1>Contact</h1>
+      <Header />
+      <HeaderBanner title="Bog'lanish"/>
+      <MapAndContact />
+      <Footer />
     </>
   )
 }

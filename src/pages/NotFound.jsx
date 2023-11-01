@@ -1,20 +1,16 @@
-import React from "react"
-
+import React from "react";
 import Header from "../layouts/Header"
 import Footer from "../layouts/Footer"
-
 import HeaderBanner from "../components/HeaderBanner"
-import NewsBox from "../components/NewsBox"
 
-function News() {
-  return (
+function NotFound() {
+  return(
     <>
       <Header />
-      <HeaderBanner title="Yangiliklar"/>
-      <NewsBox />
+      <HeaderBanner title="404 - Sahifa topilmadi"/>
       <Footer />
     </>
   )
 }
 
-export default News
+export default NotFound

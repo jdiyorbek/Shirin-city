@@ -356,12 +356,14 @@
 }
 /*! Last News */
 /*! =========================== */
+/*! Map And Contact */
 
 .map-and-contact {
   display: grid;
   grid-template-columns: 47% 47%;
   justify-content: space-between;
   grid-template-rows: auto;
+  margin: 30px auto;
 
   .box-1 {
     iframe {
@@ -394,7 +396,6 @@
         border-bottom: 3px solid var.$primary;
         background-color: var.$light-gray;
         max-width: 100%;
-        min-width: 100%;
         font: {
           size: 1rem; 
         }
@@ -402,6 +403,7 @@
 
       textarea {
         min-height: 150px;
+        resize: vertical;
       }
 
       button {
@@ -439,3 +441,6 @@
     }
   }
 }
+
+/*! Map And Contact */
+/*! =========================== */

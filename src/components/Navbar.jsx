@@ -29,6 +29,7 @@ function Navbar() {
         <ul>
           <li><Link to="/">Bosh sahifa</Link></li>
           <li><Link to="/news">Yangiliklar</Link></li>
+          <li><Link to="/gallery">Galereya</Link></li>
           <li><Link to="/contact">Bog'lanish</Link></li>
         </ul>
       </nav>

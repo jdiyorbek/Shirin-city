@@ -1,0 +1,35 @@
+{
+  "header": {
+    "contact-info": {
+      "phone": "Telefon raqamimiz",
+      "location": "Manzilimiz"
+    },
+    "navigation": {
+      "home": "Bosh sahifa",
+      "news": "Yangiliklar",
+      "contact": "Bog'lanish"
+    }
+  },
+  "carusel": {
+    "title": "We Are Professional Quality Services",
+    "button-text": "Our Services"
+  },
+  "Why-us": {
+    "title": "We Are Professional Quality Services",
+    "description": "Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    "list": ["35 Years Experience", "Excellence Certificate", "Affordable Price"]
+  },
+  "lastest-news": {
+    "title": "Latest News and Articles",
+    "read-more": "ko'proq o'qish"
+  },
+  "map-and-contact": {
+    "title": "Biz bilan bog'laning",
+    "form": {
+      "name": "Ismingiz",
+      "phone": "Telefon raqamimiz",
+      "message": "Xabar yozing",
+      "submit": "Yuborish"
+    }
+  }
+}

@@ -10,7 +10,7 @@ function LastNews() {
         <div className="last-news__box">
           <div className="card">
             <div className="img-box">
-              <img src="./public/images/news-img.jpg"/>
+              <img src="/images/news-img.jpg"/>
               <div className="date">
                 <ion-icon name="calendar-outline"></ion-icon>
                 April 2, 2022
@@ -28,7 +28,7 @@ function LastNews() {
           </div>
           <div className="card">
             <div className="img-box">
-              <img src="./public/images/news-img.jpg"/>
+              <img src="/images/news-img.jpg"/>
               <div className="date">
                 <ion-icon name="calendar-outline"></ion-icon>
                 April 2, 2022

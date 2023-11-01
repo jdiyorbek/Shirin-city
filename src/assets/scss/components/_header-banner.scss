@@ -1,0 +1,49 @@
+@use "../abstract/variables" as var;
+
+.header-banner {
+  height: 400px;
+  background: {
+    image: url("/images/header-bg.jpg");
+    size: cover;
+  }
+  
+  .header-banner__text {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font: {
+        size: 4rem;
+        weight: 800;
+      }
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .header-banner {
+    .header-banner__text {
+      h1 {
+        font: {
+          size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header-banner {
+    .header-banner__text {
+      h1 {
+        font: {
+          size: 2.5rem;
+        }
+      }
+    }
+  }
+}
